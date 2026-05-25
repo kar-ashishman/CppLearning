@@ -36,6 +36,15 @@ int main()
     return 0;
 }
 ```
+Narrowing conversion is only disallowed during initialization. Later in code narrowing conversion is allowed.
+
+```
+int main()
+{
+    int w1 { 4 };
+    w1 = 4.5;   // Allowed, w1 has a value of 4
+```
+
 
 ## Initializing multiple variables
 
