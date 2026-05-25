@@ -17,8 +17,8 @@ int d { 7 };   // direct-list-initialization (initial value in braces)
 int e {};      // value-initialization (empty braces)
 int h = { 6 }; // copy-list-initialization of initial value 6 into variable height (rarely used)
 ```
-
-## List-initialization disallows narrowing conversions
+---
+## 1. List-initialization disallows narrowing conversions
 To list-initialize a variable using a value that the variable can not safely hold, the compiler is required to produce a diagnostic (compilation error or warning) to notify.
 
 ```cpp
@@ -44,9 +44,8 @@ int main()
     int w1 { 4 };
     w1 = 4.5;   // Allowed, w1 has a value of 4
 ```
-
-
-## Initializing multiple variables
+---
+## 2. Initializing multiple variables
 
 ```Cpp
 int a = 5, b = 6;          // copy-initialization
@@ -54,8 +53,8 @@ int c ( 7 ), d ( 8 );      // direct-initialization
 int e { 9 }, f { 10 };     // direct-list-initialization
 int i {}, j {};            // value-initialization
 ```
-
-## Unused initialized variables warnings
+---
+## 3. Unused initialized variables warnings
 To stop unused warning use `[[maybe_unused]]`
 ```Cpp
 #include <iostream>
