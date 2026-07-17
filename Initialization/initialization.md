@@ -2,7 +2,7 @@
 ### Source: [Learn C++ Initializers](https://www.learncpp.com/cpp-tutorial/variable-assignment-and-initialization/)
 ---
 # Variable assignment and initialization
-## List initialization is the most preferred initialization in C++ as it doesn't allow value narrowing.
+## Note: List initialization is the most preferred initialization in C++ as it doesn't allow value narrowing.
 
 There are 5 common forms of initialization in C++
 
